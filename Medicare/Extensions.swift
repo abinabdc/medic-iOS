@@ -48,4 +48,26 @@ extension UILabel{
         }
     }
 }
+extension UITextField{
+    func isPrimaryTextfield(placeholder: String){
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderWidth = 0.25
+        self.layer.cornerRadius = 4
+        self.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
+        self.placeholder = placeholder
+        //padding view
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: self.frame.size.height))
+        self.leftView = paddingView
+        self.font = UIFont(name: "Montserrat-Regular", size: 14)
+        
+    }
+}
+extension UIButton{
+    func isPrimaryButton(title: String){
+        self.layer.cornerRadius = 8
+        self.setTitle(title, for: [])
+        self.backgroundColor = UIColor(hexString: "CC1C29")
+        self.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
+}
 
