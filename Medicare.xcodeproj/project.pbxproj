@@ -12,6 +12,7 @@
 		19BE2C3C63163FF0E0CAAC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BE28FE720A256E0EF612F8 /* Assets.xcassets */; };
 		19BE2E05634DDA78E8443CF9 /* Medicare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19BE2364CCF1278FB29470D9 /* Medicare.xcdatamodeld */; };
 		19BE2ED67B4607B0BC516C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BE269FD22A50BCF4FEEB53 /* LaunchScreen.storyboard */; };
+		991AC976588CF54EAB902341 /* Pods_Medicare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BE9B9159D3F896E2655D05 /* Pods_Medicare.framework */; };
 		A96FF6E428681E65005DAEB0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FF6E328681E65005DAEB0 /* Extensions.swift */; };
 		A96FF6E828681F09005DAEB0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FF6E728681F09005DAEB0 /* LoginViewController.swift */; };
 		A96FF6EA28681FC8005DAEB0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FF6E928681FC8005DAEB0 /* LoginView.swift */; };
@@ -21,6 +22,10 @@
 		A96FF6F328682136005DAEB0 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A96FF6EF28682136005DAEB0 /* Montserrat-Italic.ttf */; };
 		A96FF6F828686AF7005DAEB0 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96FF6F728686AF7005DAEB0 /* Register.storyboard */; };
 		A96FF6FA28686B45005DAEB0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FF6F928686B45005DAEB0 /* RegisterViewController.swift */; };
+		A96FF6FD286872C6005DAEB0 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FF6FC286872C6005DAEB0 /* LoginResponseModel.swift */; };
+		A96FF6FF2868733A005DAEB0 /* LoginSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FF6FE2868733A005DAEB0 /* LoginSession.swift */; };
+		A96FF702286877D6005DAEB0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FF701286877D6005DAEB0 /* LoginViewModel.swift */; };
+		A96FF704286877F0005DAEB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FF703286877F0005DAEB0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,8 @@
 		19BE29E6E5C2FC52BAB3F75C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19BE2D973A123BFC76BE2292 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19BE2E7EE4DD36221732B811 /* Medicare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medicare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BE9B9159D3F896E2655D05 /* Pods_Medicare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medicare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		566204411894E8267EECDB49 /* Pods-Medicare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medicare.debug.xcconfig"; path = "Target Support Files/Pods-Medicare/Pods-Medicare.debug.xcconfig"; sourceTree = "<group>"; };
 		A96FF6E328681E65005DAEB0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A96FF6E728681F09005DAEB0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A96FF6E928681FC8005DAEB0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -40,6 +47,11 @@
 		A96FF6EF28682136005DAEB0 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		A96FF6F728686AF7005DAEB0 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		A96FF6F928686B45005DAEB0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A96FF6FC286872C6005DAEB0 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		A96FF6FE2868733A005DAEB0 /* LoginSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSession.swift; sourceTree = "<group>"; };
+		A96FF701286877D6005DAEB0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A96FF703286877F0005DAEB0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FFCCA895342D70C366279517 /* Pods-Medicare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medicare.release.xcconfig"; path = "Target Support Files/Pods-Medicare/Pods-Medicare.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991AC976588CF54EAB902341 /* Pods_Medicare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,8 @@
 				A96FF6E528681EDD005DAEB0 /* MIsc */,
 				19BE2D973A123BFC76BE2292 /* ViewController.swift */,
 				A96FF6E328681E65005DAEB0 /* Extensions.swift */,
+				A96FF6FE2868733A005DAEB0 /* LoginSession.swift */,
+				A96FF703286877F0005DAEB0 /* Constants.swift */,
 			);
 			path = Medicare;
 			sourceTree = "<group>";
@@ -78,7 +93,18 @@
 			children = (
 				19BE280EF145226CB5F6A747 /* Products */,
 				19BE227DBA2FC177171F7DB0 /* Medicare */,
+				29F188B174A016FD468FDBFB /* Pods */,
+				C96724B5822CDB397C0235C2 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		29F188B174A016FD468FDBFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				566204411894E8267EECDB49 /* Pods-Medicare.debug.xcconfig */,
+				FFCCA895342D70C366279517 /* Pods-Medicare.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		A96FF6E528681EDD005DAEB0 /* MIsc */ = {
@@ -97,6 +123,8 @@
 		A96FF6E628681EF6005DAEB0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A96FF700286877C7005DAEB0 /* ViewModel */,
+				A96FF6FB286872B5005DAEB0 /* Model */,
 				A96FF6E728681F09005DAEB0 /* LoginViewController.swift */,
 				A96FF6E928681FC8005DAEB0 /* LoginView.swift */,
 			);
@@ -139,6 +167,30 @@
 			path = viewcontroller;
 			sourceTree = "<group>";
 		};
+		A96FF6FB286872B5005DAEB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A96FF6FC286872C6005DAEB0 /* LoginResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A96FF700286877C7005DAEB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A96FF701286877D6005DAEB0 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C96724B5822CDB397C0235C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49BE9B9159D3F896E2655D05 /* Pods_Medicare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19BE222FFE67AAF00E7BEE9E /* Build configuration list for PBXNativeTarget "Medicare" */;
 			buildPhases = (
+				C243D968931BE9AE5D416A03 /* [CP] Check Pods Manifest.lock */,
 				19BE2AE675EB82FF4EBBEE7F /* Sources */,
 				19BE2888443655C628C517B0 /* Frameworks */,
 				19BE245D60EB7F7C434C6BE5 /* Resources */,
+				5088AF07DF538F5731A67142 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,17 +256,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5088AF07DF538F5731A67142 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Medicare/Pods-Medicare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Medicare/Pods-Medicare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C243D968931BE9AE5D416A03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Medicare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19BE2AE675EB82FF4EBBEE7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A96FF6EA28681FC8005DAEB0 /* LoginView.swift in Sources */,
+				A96FF704286877F0005DAEB0 /* Constants.swift in Sources */,
+				A96FF6FF2868733A005DAEB0 /* LoginSession.swift in Sources */,
 				19BE2B21DB9973A0C3B19B7B /* AppDelegate.swift in Sources */,
 				A96FF6FA28686B45005DAEB0 /* RegisterViewController.swift in Sources */,
 				19BE2E05634DDA78E8443CF9 /* Medicare.xcdatamodeld in Sources */,
+				A96FF6FD286872C6005DAEB0 /* LoginResponseModel.swift in Sources */,
 				19BE2981BC1D792B70F481ED /* ViewController.swift in Sources */,
 				A96FF6E828681F09005DAEB0 /* LoginViewController.swift in Sources */,
+				A96FF702286877D6005DAEB0 /* LoginViewModel.swift in Sources */,
 				A96FF6E428681E65005DAEB0 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +338,7 @@
 /* Begin XCBuildConfiguration section */
 		19BE279C26E383A994F9D276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCCA895342D70C366279517 /* Pods-Medicare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,6 +476,7 @@
 		};
 		19BE2F6379B2335990D827AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566204411894E8267EECDB49 /* Pods-Medicare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

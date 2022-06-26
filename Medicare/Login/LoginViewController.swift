@@ -120,12 +120,35 @@ extension LoginViewController{
             self.loginView.warningLabel.isHidden = false
         }else{
             self.loginView.warningLabel.isHidden = true
-            customAlerView(title: "Should work now", message: "should work now")
+            
+            loginApiCall(username: loginView.usernameTextField.text ?? "", password: loginView.passwordTextField.text ?? "")
         }
     }
     @objc func signUpTapped(_ sender: UITapGestureRecognizer){
         let vc = UIStoryboard(name: "Register", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+
+extension LoginViewController{
+    private func loginApiCall(username: String, password: String){
+        LoginViewModel().requestForLogin(Username: username, Password: password) { apiResponse in
+            print(apiResponse)
+            
+            if (apiResponse.status!){
+                self.customAlerView(title: "Success", message: apiResponse.data?.token ?? "")
+                
+            }else{
+                self.customAlerView(title: "Oops, Something went wrong.", message: apiResponse.message ?? "")
+                
+            }
+        } fail: { msg in
+            self.customAlerView(title: "Error", message: msg)
+            
+        }
+
+        
     }
 }
 
