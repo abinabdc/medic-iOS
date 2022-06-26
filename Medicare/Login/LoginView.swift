@@ -31,8 +31,8 @@ class LoginView : UIView{
 
 extension LoginView {
     func style(){
-        userNameLabel.isRegularLabel(text: "Username", fontSize: 14, bold: false, color: .black)
-        passwordLabel.isRegularLabel(text: "Password", fontSize: 14, bold: false, color: .black)
+        userNameLabel.isRegularLabel(text: "Username", fontSize: 14, bold: true, color: .black)
+        passwordLabel.isRegularLabel(text: "Password", fontSize: 14, bold: true, color: .black)
         warningLabel.isRegularLabel(text: "Incorrect username or password.", fontSize: 14, bold: false, color: .systemRed)
         usernameTextField.isPrimaryTextfield(placeholder: "Enter your username")
         passwordTextField.isPrimaryTextfield(placeholder: "Enter your password")
@@ -49,11 +49,14 @@ extension LoginView {
         stackView.addArrangedSubview(passwordTextField)
         stackView.addArrangedSubview(warningLabel)
         warningLabel.isHidden = true
+        tamic()
         addSubview(stackView)
+        constraintDefination()
     }
     func tamic(){
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         translatesAutoresizingMaskIntoConstraints = false
+
+        stackView.translatesAutoresizingMaskIntoConstraints = false
     }
     func constraintDefination(){
         NSLayoutConstraint.activate([

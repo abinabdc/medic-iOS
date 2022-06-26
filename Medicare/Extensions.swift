@@ -7,6 +7,15 @@
 
 import Foundation
 import UIKit
+extension UIViewController{
+    func customAlerView(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+}
 
 extension UIColor {
     convenience init(hexString: String, alpha: CGFloat = 1.0) {
@@ -41,10 +50,10 @@ extension UILabel{
     func isRegularLabel(text: String, fontSize: CGFloat, bold: Bool, color: UIColor){
         self.text = text
         self.textColor = color
-        if bold{
-            self.font = UIFont(name: "Montserrat-Regular", size: fontSize)
-        }else{
+        if (bold){
             self.font = UIFont(name: "Montserrat-Bold", size: fontSize)
+        }else{
+            self.font = UIFont(name: "Montserrat-Regular", size: fontSize)
         }
     }
 }
@@ -58,6 +67,7 @@ extension UITextField{
         //padding view
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: self.frame.size.height))
         self.leftView = paddingView
+        leftViewMode = .always
         self.font = UIFont(name: "Montserrat-Regular", size: 14)
         
     }
@@ -67,7 +77,8 @@ extension UIButton{
         self.layer.cornerRadius = 8
         self.setTitle(title, for: [])
         self.backgroundColor = UIColor(hexString: "CC1C29")
-        self.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.heightAnchor.constraint(equalToConstant: 55.0).isActive = true
+        self.setTitleColor(.white, for: [])
     }
 }
 
