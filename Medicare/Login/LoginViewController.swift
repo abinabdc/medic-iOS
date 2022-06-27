@@ -111,16 +111,21 @@ extension LoginViewController{
         ])
     }
     private func buttonActions(){
+        
+       
         loginButton.addTarget(self, action: #selector(signInButtonTapped), for: .touchUpInside)
         
     }
     @objc func signInButtonTapped(){
+        Spinner.start()
+        
+        
+      
         if loginView.usernameTextField.text == "" || loginView.usernameTextField.text == "" {
             self.loginView.warningLabel.text = "Empty fields detected."
             self.loginView.warningLabel.isHidden = false
         }else{
             self.loginView.warningLabel.isHidden = true
-            
             loginApiCall(username: loginView.usernameTextField.text ?? "", password: loginView.passwordTextField.text ?? "")
         }
     }
@@ -135,9 +140,20 @@ extension LoginViewController{
     private func loginApiCall(username: String, password: String){
         LoginViewModel().requestForLogin(Username: username, Password: password) { apiResponse in
             print(apiResponse)
+            Spinner.stop()
             
-            if (apiResponse.status!){
-                self.customAlerView(title: "Success", message: apiResponse.data?.token ?? "")
+            if (apiResponse.status ?? false){
+                let userDefault = UserDefaults.standard
+                userDefault.set(apiResponse.data?.token ?? "NA", forKey: "access_token")
+                LoginViewController.loginSuccessHandler()
+//                self.customAlerView(title: "Success", message: apiResponse.data?.token ?? "")
+                
+                
+                
+                
+                
+                
+
                 
             }else{
                 self.customAlerView(title: "Oops, Something went wrong.", message: apiResponse.message ?? "")
@@ -151,4 +167,48 @@ extension LoginViewController{
         
     }
 }
+
+extension LoginViewController{
+    static func loginSuccessHandler(){
+        let vc1 = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+        vc1.title = "Home"
+        let vc2 = UIStoryboard(name: "Cart", bundle: nil).instantiateViewController(identifier: "CartViewController") as! CartViewController
+        vc2.title = "Cart"
+        let vc3 = UIStoryboard(name: "Search", bundle: nil).instantiateViewController(identifier: "SearchViewController") as! SearchViewController
+        vc3.title = "Search"
+        let vc4 = UIStoryboard(name: "More", bundle: nil).instantiateViewController(identifier: "MoreViewController") as! MoreViewController
+        vc4.title = "More"
+        
+        let tabBarVC = UITabBarController()
+        tabBarVC.setViewControllers([vc1,vc2,vc3,vc4], animated: false)
+        
+        guard let items = tabBarVC.tabBar.items else{
+            return
+        }
+        let images = ["house","cart","magnifyingglass","list.dash"]
+      
+        for x in 0..<items.count {
+            items[x].image = UIImage(systemName: images[x])
+            
+        }
+        
+        let nav2 = UINavigationController()
+        let mainViewForNav2 = tabBarVC
+        nav2.viewControllers = [mainViewForNav2]
+        UIApplication.shared.windows.first?.rootViewController = nav2
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+        
+//        changeRootViewController(vc: tabBarVC)
+    }
+    
+//    func changeRootViewController(vc: UITabBarController){
+//        let nav2 = UINavigationController()
+//        let mainViewForNav2 = vc
+//        nav2.viewControllers = [mainViewForNav2]
+//        UIApplication.shared.windows.first?.rootViewController = nav2
+//        UIApplication.shared.windows.first?.makeKeyAndVisible()
+//    }
+}
+
+
 

@@ -43,3 +43,9 @@ struct LoginDetailResponse : Mappable {
     }
 
 }
+
+
+
+
+
+

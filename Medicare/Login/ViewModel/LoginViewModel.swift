@@ -16,7 +16,7 @@ class LoginViewModel{
 func requestForLogin(Username: String, Password: String, success: @escaping (LoginResponseModel) -> Void, fail: @escaping (String) -> Void) {
     
     
-    let params: [String: String] = [
+    let params: [String: Any] = [
         "Username" : Username,
         "Password" : Password,
     ]
@@ -27,6 +27,8 @@ func requestForLogin(Username: String, Password: String, success: @escaping (Log
         print(url)
         switch response.result {
         case .success(let value):
+            print("cooking ", value)
+//            let responseModel = Mapper<LoginResponseModel>().map(JSONString: value)
             success(value)
             
         case .failure(let error):

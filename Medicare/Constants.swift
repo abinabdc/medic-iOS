@@ -10,7 +10,4 @@ import Foundation
 
 
 let BASE_URL = "http://abinabdangi-001-site1.ftempurl.com/api/"
-
-
-
 let LOGIN_EP = "account/login"

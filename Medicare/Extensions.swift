@@ -79,10 +79,7 @@ extension UIButton{
             self.backgroundColor = UIColor(hexString: "CC1C29")
             self.heightAnchor.constraint(equalToConstant: 55.0).isActive = true
             self.setTitleColor(.white, for: [])
-        }
-        
-        
-        
+        }   
     }
   
     
