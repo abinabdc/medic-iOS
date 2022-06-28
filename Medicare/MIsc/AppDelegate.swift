@@ -30,12 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             LoginViewController.loginSuccessHandler()
         }
-        
-        
-        
-        
-        
-        
         print(userDefaults.string(forKey: "access_token")!)
         return true
     }

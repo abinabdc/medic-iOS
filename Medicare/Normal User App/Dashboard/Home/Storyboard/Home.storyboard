@@ -22,11 +22,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOj-Ni-TLB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="55v-aE-MBv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZdA-Q4-b3N" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="06U-yc-Rc9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XOj-Ni-TLB" secondAttribute="trailing" id="NLP-jU-iU9"/>
+                            <constraint firstItem="XOj-Ni-TLB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="amk-qs-iNQ"/>
+                            <constraint firstItem="XOj-Ni-TLB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="hgN-Gs-ajq"/>
                             <constraint firstItem="ZdA-Q4-b3N" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="xzZ-s6-Gsq"/>
                         </constraints>
                     </view>

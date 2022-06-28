@@ -147,14 +147,6 @@ extension LoginViewController{
                 userDefault.set(apiResponse.data?.token ?? "NA", forKey: "access_token")
                 LoginViewController.loginSuccessHandler()
 //                self.customAlerView(title: "Success", message: apiResponse.data?.token ?? "")
-                
-                
-                
-                
-                
-                
-
-                
             }else{
                 self.customAlerView(title: "Oops, Something went wrong.", message: apiResponse.message ?? "")
                 
