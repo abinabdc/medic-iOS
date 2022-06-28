@@ -34,6 +34,14 @@
 		A97719202869DAE6006B2C78 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A977191F2869DAE6006B2C78 /* More.storyboard */; };
 		A97719222869DAED006B2C78 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97719212869DAED006B2C78 /* MoreViewController.swift */; };
 		A97719242869DBA6006B2C78 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97719232869DBA6006B2C78 /* Spinner.swift */; };
+		A977192D286B4995006B2C78 /* VendorHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A977192C286B4994006B2C78 /* VendorHome.storyboard */; };
+		A977192F286B499F006B2C78 /* VendorHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977192E286B499F006B2C78 /* VendorHomeViewController.swift */; };
+		A9771933286B49C8006B2C78 /* VendorProducts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9771932286B49C8006B2C78 /* VendorProducts.storyboard */; };
+		A9771935286B49CF006B2C78 /* VendorProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9771934286B49CF006B2C78 /* VendorProductsViewController.swift */; };
+		A9771939286B4A09006B2C78 /* VendorOrders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9771938286B4A09006B2C78 /* VendorOrders.storyboard */; };
+		A977193B286B4A11006B2C78 /* VendorOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977193A286B4A11006B2C78 /* VendorOrdersViewController.swift */; };
+		A977193F286B4A38006B2C78 /* VendorMore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A977193E286B4A38006B2C78 /* VendorMore.storyboard */; };
+		A9771941286B4A42006B2C78 /* VendorMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9771940286B4A42006B2C78 /* VendorMoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +75,14 @@
 		A977191F2869DAE6006B2C78 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		A97719212869DAED006B2C78 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		A97719232869DBA6006B2C78 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		A977192C286B4994006B2C78 /* VendorHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VendorHome.storyboard; sourceTree = "<group>"; };
+		A977192E286B499F006B2C78 /* VendorHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorHomeViewController.swift; sourceTree = "<group>"; };
+		A9771932286B49C8006B2C78 /* VendorProducts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VendorProducts.storyboard; sourceTree = "<group>"; };
+		A9771934286B49CF006B2C78 /* VendorProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorProductsViewController.swift; sourceTree = "<group>"; };
+		A9771938286B4A09006B2C78 /* VendorOrders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VendorOrders.storyboard; sourceTree = "<group>"; };
+		A977193A286B4A11006B2C78 /* VendorOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorOrdersViewController.swift; sourceTree = "<group>"; };
+		A977193E286B4A38006B2C78 /* VendorMore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VendorMore.storyboard; sourceTree = "<group>"; };
+		A9771940286B4A42006B2C78 /* VendorMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorMoreViewController.swift; sourceTree = "<group>"; };
 		FFCCA895342D70C366279517 /* Pods-Medicare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medicare.release.xcconfig"; path = "Target Support Files/Pods-Medicare/Pods-Medicare.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +229,7 @@
 		A97718F22869D804006B2C78 /* Vendor App */ = {
 			isa = PBXGroup;
 			children = (
+				A9771925286B4941006B2C78 /* Dashboard */,
 			);
 			path = "Vendor App";
 			sourceTree = "<group>";
@@ -335,6 +352,117 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A9771925286B4941006B2C78 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A9771929286B495C006B2C78 /* More */,
+				A9771928286B4956006B2C78 /* Orders */,
+				A9771927286B494F006B2C78 /* Products */,
+				A9771926286B494B006B2C78 /* Home */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A9771926286B494B006B2C78 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A977192B286B4983006B2C78 /* viewcontroller */,
+				A977192A286B497A006B2C78 /* storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A9771927286B494F006B2C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9771931286B49B7006B2C78 /* viewcontroller */,
+				A9771930286B49B0006B2C78 /* storyboard */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		A9771928286B4956006B2C78 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				A9771937286B49F2006B2C78 /* viewcontroller */,
+				A9771936286B49E4006B2C78 /* storyboard */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		A9771929286B495C006B2C78 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				A977193D286B4A29006B2C78 /* viewcontroller */,
+				A977193C286B4A20006B2C78 /* storyboard */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		A977192A286B497A006B2C78 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A977192C286B4994006B2C78 /* VendorHome.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		A977192B286B4983006B2C78 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				A977192E286B499F006B2C78 /* VendorHomeViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		A9771930286B49B0006B2C78 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A9771932286B49C8006B2C78 /* VendorProducts.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		A9771931286B49B7006B2C78 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				A9771934286B49CF006B2C78 /* VendorProductsViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		A9771936286B49E4006B2C78 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A9771938286B4A09006B2C78 /* VendorOrders.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		A9771937286B49F2006B2C78 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				A977193A286B4A11006B2C78 /* VendorOrdersViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		A977193C286B4A20006B2C78 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A977193E286B4A38006B2C78 /* VendorMore.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		A977193D286B4A29006B2C78 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				A9771940286B4A42006B2C78 /* VendorMoreViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
 		C96724B5822CDB397C0235C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,11 +526,15 @@
 			files = (
 				A96FF6F228682136005DAEB0 /* Montserrat-ExtraBold.ttf in Resources */,
 				A97719132869DA6E006B2C78 /* Cart.storyboard in Resources */,
+				A9771933286B49C8006B2C78 /* VendorProducts.storyboard in Resources */,
+				A977193F286B4A38006B2C78 /* VendorMore.storyboard in Resources */,
 				A96FF6F128682136005DAEB0 /* Montserrat-Regular.ttf in Resources */,
+				A977192D286B4995006B2C78 /* VendorHome.storyboard in Resources */,
 				A96FF6F828686AF7005DAEB0 /* Register.storyboard in Resources */,
 				A97719192869DA96006B2C78 /* Search.storyboard in Resources */,
 				19BE2C3C63163FF0E0CAAC2E /* Assets.xcassets in Resources */,
 				A96FF6F328682136005DAEB0 /* Montserrat-Italic.ttf in Resources */,
+				A9771939286B4A09006B2C78 /* VendorOrders.storyboard in Resources */,
 				19BE2ED67B4607B0BC516C4D /* LaunchScreen.storyboard in Resources */,
 				A96FF6F028682136005DAEB0 /* Montserrat-Bold.ttf in Resources */,
 				A977190D2869DA2C006B2C78 /* Home.storyboard in Resources */,
@@ -468,6 +600,8 @@
 				A96FF704286877F0005DAEB0 /* Constants.swift in Sources */,
 				19BE2B21DB9973A0C3B19B7B /* AppDelegate.swift in Sources */,
 				A96FF6FA28686B45005DAEB0 /* RegisterViewController.swift in Sources */,
+				A977193B286B4A11006B2C78 /* VendorOrdersViewController.swift in Sources */,
+				A9771935286B49CF006B2C78 /* VendorProductsViewController.swift in Sources */,
 				A97719242869DBA6006B2C78 /* Spinner.swift in Sources */,
 				A97719152869DA75006B2C78 /* CartViewController.swift in Sources */,
 				19BE2E05634DDA78E8443CF9 /* Medicare.xcdatamodeld in Sources */,
@@ -475,10 +609,12 @@
 				A97719222869DAED006B2C78 /* MoreViewController.swift in Sources */,
 				19BE2981BC1D792B70F481ED /* ViewController.swift in Sources */,
 				A977191B2869DA9F006B2C78 /* SearchViewController.swift in Sources */,
+				A9771941286B4A42006B2C78 /* VendorMoreViewController.swift in Sources */,
 				A977190F2869DA34006B2C78 /* HomeViewController.swift in Sources */,
 				A96FF6E828681F09005DAEB0 /* LoginViewController.swift in Sources */,
 				A96FF702286877D6005DAEB0 /* LoginViewModel.swift in Sources */,
 				A96FF6E428681E65005DAEB0 /* Extensions.swift in Sources */,
+				A977192F286B499F006B2C78 /* VendorHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
