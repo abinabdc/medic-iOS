@@ -55,7 +55,7 @@ extension LoginView {
     }
     func tamic(){
         translatesAutoresizingMaskIntoConstraints = false
-
+        
         stackView.translatesAutoresizingMaskIntoConstraints = false
     }
     func constraintDefination(){
@@ -64,7 +64,7 @@ extension LoginView {
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 0),
             trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 0),
             bottomAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 0)
-        
+            
         ])
         
     }

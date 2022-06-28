@@ -6,9 +6,7 @@
 //
 
 import UIKit
-
 class LoginViewController: UIViewController{
-    
     let loginView = LoginView()
     let loginMessageLabel = UILabel()
     let bodyView = UIView()
@@ -39,12 +37,6 @@ extension LoginViewController{
         loginMessageLabel.isRegularLabel(text: "Login Now.", fontSize: 28, bold: true, color: .black)
         newHereLabel.isRegularLabel(text: "New here?", fontSize: 14, bold: false, color: .gray)
         createNewLabel.isRegularLabel(text: "Create New", fontSize: 14, bold: true, color: .black)
-        
-        
-        
-        
-        
-        
     }
     private func layout(){
         greetStack.addArrangedSubview(loginGreetingsLabel)
@@ -58,13 +50,6 @@ extension LoginViewController{
         signUpStack.spacing = 2
         signUpStack.alignment = .leading
         constraintsDefination()
-        
-        
-        
-        
-        
-        
-        
     }
     private func tamic(){
         loginView.translatesAutoresizingMaskIntoConstraints = false
@@ -98,8 +83,6 @@ extension LoginViewController{
             loginView.topAnchor.constraint(equalToSystemSpacingBelow: signUpStack.bottomAnchor, multiplier: 2),
             loginView.leadingAnchor.constraint(equalToSystemSpacingAfter: self.view.leadingAnchor, multiplier: 2),
             self.view.trailingAnchor.constraint(equalToSystemSpacingAfter: loginView.trailingAnchor, multiplier: 2),
-            
-            
         ])
         
         self.view.addSubview(loginButton)
@@ -107,20 +90,13 @@ extension LoginViewController{
             loginButton.topAnchor.constraint(equalToSystemSpacingBelow: loginView.bottomAnchor, multiplier: 2),
             loginButton.leadingAnchor.constraint(equalToSystemSpacingAfter: self.view.leadingAnchor, multiplier: 2),
             self.view.trailingAnchor.constraint(equalToSystemSpacingAfter: loginButton.trailingAnchor, multiplier: 2),
-            
         ])
     }
     private func buttonActions(){
-        
-       
         loginButton.addTarget(self, action: #selector(signInButtonTapped), for: .touchUpInside)
-        
     }
     @objc func signInButtonTapped(){
         Spinner.start()
-        
-        
-      
         if loginView.usernameTextField.text == "" || loginView.usernameTextField.text == "" {
             self.loginView.warningLabel.text = "Empty fields detected."
             self.loginView.warningLabel.isHidden = false
@@ -134,8 +110,6 @@ extension LoginViewController{
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
-
-
 extension LoginViewController{
     private func loginApiCall(username: String, password: String){
         LoginViewModel().requestForLogin(Username: username, Password: password) { apiResponse in
@@ -146,7 +120,6 @@ extension LoginViewController{
                 let userDefault = UserDefaults.standard
                 userDefault.set(apiResponse.data?.token ?? "NA", forKey: "access_token")
                 LoginViewController.loginSuccessHandler()
-//                self.customAlerView(title: "Success", message: apiResponse.data?.token ?? "")
             }else{
                 self.customAlerView(title: "Oops, Something went wrong.", message: apiResponse.message ?? "")
                 
@@ -155,7 +128,7 @@ extension LoginViewController{
             self.customAlerView(title: "Error", message: msg)
             
         }
-
+        
         
     }
 }
@@ -178,7 +151,7 @@ extension LoginViewController{
             return
         }
         let images = ["house","cart","magnifyingglass","list.dash"]
-      
+        
         for x in 0..<items.count {
             items[x].image = UIImage(systemName: images[x])
             
@@ -190,16 +163,8 @@ extension LoginViewController{
         UIApplication.shared.windows.first?.rootViewController = nav2
         UIApplication.shared.windows.first?.makeKeyAndVisible()
         
-//        changeRootViewController(vc: tabBarVC)
     }
     
-//    func changeRootViewController(vc: UITabBarController){
-//        let nav2 = UINavigationController()
-//        let mainViewForNav2 = vc
-//        nav2.viewControllers = [mainViewForNav2]
-//        UIApplication.shared.windows.first?.rootViewController = nav2
-//        UIApplication.shared.windows.first?.makeKeyAndVisible()
-//    }
 }
 
 

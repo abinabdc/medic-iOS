@@ -74,14 +74,14 @@ extension UITextField{
 }
 extension UIButton{
     func isPrimaryButton(title: String){
-            self.layer.cornerRadius = 8
-            self.setTitle(title, for: [])
-            self.backgroundColor = UIColor(hexString: "CC1C29")
-            self.heightAnchor.constraint(equalToConstant: 55.0).isActive = true
-            self.setTitleColor(.white, for: [])
-        }   
-    }
-  
-    
+        self.layer.cornerRadius = 8
+        self.setTitle(title, for: [])
+        self.backgroundColor = UIColor(hexString: "CC1C29")
+        self.heightAnchor.constraint(equalToConstant: 55.0).isActive = true
+        self.setTitleColor(.white, for: [])
+    }   
+}
+
+
 
 
